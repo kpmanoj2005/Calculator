@@ -1,0 +1,90 @@
+
+body {
+    background: #f4f4f4;
+    font-family: "Rubik", sans-serif;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    }
+.container {
+    background: #222;
+    padding: 30px 20px;
+    border-radius: 45px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    display: inline-block;
+    min-width: 320px;
+}
+    
+#history {
+    min-height: 24px;
+    color: #bbb;
+    text-align: right;
+    font-size: 1em;
+    margin-bottom: 5px;
+    padding-right: 10px;
+    height: 24px;
+}
+
+#display {
+    width: 320px;
+    height: 50px;
+    font-size: 2em;
+    margin-bottom: 15px;
+    text-align: right;
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid white;
+    background: #3a3a3a;
+    color: #fff;
+    box-sizing: border-box;
+}
+.button-row{
+    display:flex;
+    
+}
+
+button{
+    width: 65px;
+    height: 65px;
+    margin: 10px 9px;
+    font-size: 40px;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+button.number,button.decimal{
+    background: #444;
+    color: #fff;
+}
+
+button.operator{
+    background:orange;
+    color: white;
+}
+button.clear{
+    background: #868686;
+    color: white;
+}
+button:active.number,button:active.clear{
+    background: #666;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+}
+button:active.operator{
+    background: rgb(255, 187, 61);
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+}
+button#equals{
+    background: #4285f4;
+    color: #fff;
+    font-weight: bold;
+}
+button#equals:active{
+    background: #3367d3;
+}
+button#zero{
+    width: 128px;
+}
